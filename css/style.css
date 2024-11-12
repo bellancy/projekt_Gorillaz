@@ -85,7 +85,7 @@
 }
 
 
-.panel1 p, .button {
+.panel1 p, .button, .panel2 p {
     font-size: 13px;
 }
 
@@ -102,7 +102,7 @@
         max-width: 100%;
     }
 
-    .panel1 p, .button {
+    .panel1 p, .button, .panel2 p {
         font-size: 18px;
     }
 }
@@ -235,4 +235,59 @@
 
 .cover {
     z-index: 2;
+}
+
+
+.panel2 {
+    background-color: black;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.panel2 .flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+   
+@media (min-width: 1200px)
+/*pc*/
+    {
+        .panel2 img {
+            height: 450px;
+        }
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 3s linear infinite both;
+	        animation: rotate-center 3s linear infinite both;
+}
+
+.pulka-text .button {
+    background-color: unset;
+    border: 1px solid #48CE36;
+    display: inline-block;
+    margin-left: auto;
+}
+.pulka-text .button a {
+    color: #48CE36;
+}
+
+
+@media (min-width: 768px)
+/*tablet*/
+    {
+        .panel2 .flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0;
+        }
+        .pulka-text {
+            width: 520px;
+        }
 }
