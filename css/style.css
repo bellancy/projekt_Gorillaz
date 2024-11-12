@@ -1,5 +1,28 @@
-@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
-*  {
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -13,33 +36,40 @@
     color: #fff;
     font-size: 20px;
 }
+
 .button {
     background-color: #48CE36;
     border-radius: 35px;
 }
+
 .button a {
     color: black;
     text-decoration: none;
     font-weight: 600;
 }
+
 .nav-item:hover a {
     text-decoration: underline;
     text-underline-offset: 8px;
     color: #48CE36;
 }
+
 .navbar-main ul {
     font-size: 24px;
     margin-top: 1rem;
 }
+
 .sm-icons {
     padding-top: 1rem;
 }
 
 @media (min-width: 768px)
-/*tablet*/ {
+/*tablet*/
+    {
     .navbar-main ul {
         margin-top: 0rem;
     }
+
     .sm-icons {
         padding-top: 0rem;
     }
@@ -54,3 +84,72 @@
     margin: auto;
 }
 
+
+.panel1 p {
+    font-size: 13px;
+}
+
+.panel1 h1 img {
+    width: 250px;
+    max-width: 70%;
+    height: auto;
+}
+
+@media (min-width: 768px)
+/*tablet*/
+    {
+    .panel1 h1 img {
+        max-width: 100%;
+    }
+
+    .panel1 p {
+        font-size: 18px;
+    }
+}
+
+.panel1 {
+    color: #fff;
+    padding-top: 5rem;
+    position: relative;
+    max-width: 100%;
+    width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.panel1 h1 {
+    padding-bottom: 0.5rem;
+}
+.panel1 {
+    padding: 2rem;
+    padding-top: 7rem;
+}
+@media (min-width: 768px)
+/*tablet*/
+    {
+    .panel1 {
+        padding: 6rem;
+        padding-top: 3rem;
+    }
+}
+
+.panel1 .button {
+    background-color: unset;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-left: auto;
+}
+@media (min-width: 768px)
+/*tablet*/
+    {
+    .panel1 .button {
+        margin-right: 2rem;
+    }
+}
+
+.panel1 .button a {
+    color: #fff;
+    font-weight: 400;
+}
