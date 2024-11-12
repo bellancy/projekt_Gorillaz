@@ -85,7 +85,7 @@
 }
 
 
-.panel1 p {
+.panel1 p, .button {
     font-size: 13px;
 }
 
@@ -102,7 +102,7 @@
         max-width: 100%;
     }
 
-    .panel1 p {
+    .panel1 p, .button {
         font-size: 18px;
     }
 }
@@ -122,16 +122,20 @@
 .panel1 h1 {
     padding-bottom: 0.5rem;
 }
-.panel1 {
+.panel1, .obsah {
     padding: 2rem;
+}
+.panel1 {
     padding-top: 7rem;
 }
 @media (min-width: 768px)
 /*tablet*/
     {
     .panel1 {
-        padding: 6rem;
         padding-top: 3rem;
+    }
+    .panel1, .obsah {
+        padding: 6rem;
     }
 }
 
@@ -152,4 +156,83 @@
 .panel1 .button a {
     color: #fff;
     font-weight: 400;
+}
+
+.panel1-2 {
+    position: relative;
+}
+.rotate-center {
+	-webkit-animation: rotate-center 3s linear infinite both;
+	        animation: rotate-center 3s linear infinite both;
+}
+
+.bg-deska {
+    background-color: #1b9e0f;
+    height: 120px;
+}
+.audio-text p {
+   font-weight: 500;
+   margin-bottom: 0.5rem;
+}
+.cover-deska {
+    display: flex;
+    position: relative;
+}
+.deska {
+    position: absolute;
+    z-index: 1;
+    left: 5rem;
+    top: 0.5rem;
+}
+@media (min-width: 768px)
+/*tablet*/
+    {
+        .cover-deska {
+            padding-left: 0;
+        }
+        .bg-deska {
+            height: 200px;
+        }
+}
+
+@media (min-width: 576px)
+/*tablet*/
+    {
+        .deska img {
+            height: 200px;
+        }
+        .cover img {
+            height: 220px;
+        }
+        .deska {
+            position: absolute;
+            z-index: 1;
+            left: 8rem;
+        }
+}
+
+.audio1, .audio2 {
+    display: flex;
+    flex-direction: column;
+    float: inline-end;
+}
+.audio-text {
+    padding-left: 5rem;
+}
+@media (min-width: 1200px)
+/*pc*/
+    {
+        .audio1, .audio2 {
+            position: absolute;
+            right: 0rem;
+            top: -4rem;
+        }
+        .audio2 {
+            right: 22rem;
+            top: -1rem;
+        }
+}
+
+.cover {
+    z-index: 2;
 }
