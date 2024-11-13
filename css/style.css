@@ -216,8 +216,11 @@
     flex-direction: column;
     float: inline-end;
 }
-.audio-text {
+.audio1 .audio-text {
     padding-left: 5rem;
+}
+.audio2 .audio-text {
+    padding-left: 2.5rem;
 }
 @media (min-width: 1200px)
 /*pc*/
@@ -290,4 +293,82 @@
         .pulka-text {
             width: 520px;
         }
+}
+
+
+
+.bg-koncert nav {
+    background-color: black;
+    padding-bottom: 3rem;
+}
+.bg-koncert {
+    background-color: black;
+}
+
+.card {
+    border: none !important;
+    background-color: unset !important;
+}
+.card-date {
+    opacity: 60%;
+}
+
+.nadchazejici {
+    color: #fff;
+    text-align: center;
+}
+.nadchazejici h1 {
+    padding-bottom: 1rem;
+}
+.minule h1 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.minule {
+    background-color: black;
+}
+
+.nadchazejici .akce {
+    border: 1px solid #fff;
+    margin-top: 1rem;
+    display: inline-block;
+    max-width: 450px;
+}
+p .zelena {
+    color: #48CE36;
+}
+
+.zruseno:hover {
+    color: red !important;
+    text-decoration: line-through;
+}
+
+.card .btn {
+    color: #48CE36;
+}
+.card .btn:hover {
+    color: #48CE36;
+}
+
+
+@media (min-width: 768px)
+/*tablet*/
+    {
+        .bg-nadchazejici {
+            background-image: url(../images/bg-koncerty.png);
+            background-size: cover;
+            background-position: center;
+            max-height: 650px;
+            max-width: 1500px;
+            margin: auto;
+            background-color: black;
+        }
+        
+        .bg-koncert nav {
+            background-color:unset;
+        }
+.obsah {
+        padding: 3rem;
+    }
 }
