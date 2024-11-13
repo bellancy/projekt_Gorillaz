@@ -456,13 +456,8 @@ p .zelena {
 .accordion-button {
     background-color: unset !important;
     border: none !important;
-    text-decoration: underline;
-    text-underline-offset: 15px;
 }
 
-.accordion-button.collapsed {
-    text-decoration: none !important;
-}
 .accordion-item .r {
     border-radius: 0 !important;
 }
@@ -473,4 +468,21 @@ p .zelena {
 
 .accordion-button::after {
     filter: invert(1) brightness(100) !important;
+}
+
+
+.projekty {
+    padding-top: 8rem;
+}
+.projekty .card a {
+    background-color: #48CE36;
+    border-radius: 20px;
+    color: #000;
+    padding: 5px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.row .card {
+    border: 1px solid #48CE36 !important;
 }
