@@ -80,11 +80,18 @@
     background-size: cover;
     background-position: center;
     min-height: 800px;
+}
+
+.bg-deska, .panel2, .minule, .bg, .bg-bio, .bg_nav-panel1, .galerie {
+    max-width: 1500px;
+    margin: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+nav .container-fluid{
     max-width: 1500px;
     margin: auto;
 }
-
-
 .panel1 p,
 .button,
 .panel2 p {
@@ -253,12 +260,12 @@
     .audio2 {
         position: absolute;
         right: 0rem;
-        top: -4rem;
+        top: -1rem;
     }
 
     .audio2 {
         right: 22rem;
-        top: -1rem;
+        top: 2rem;
     }
 }
 
@@ -486,3 +493,108 @@ p .zelena {
 .row .card {
     border: 1px solid #48CE36 !important;
 }
+
+
+
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    .bg-bio {
+        background-color: #000 !important;
+    }
+    
+    .featurette img {
+        max-width: 300px;
+        height: auto;
+    }
+    @media (min-width: 768px) {
+        .featurette img {
+            width: 100%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .col-lg-6 {
+            width: 75% !important;
+        }
+    }
+    body .bg-body-secondary {
+        background-color: rgb(72,206,54, 0.7) !important;
+    }
+
+    .featurette h2 {
+        color: rgb(209, 28, 115) !important;
+    }
+    .bg-bio p {
+        line-height: 1.8rem;
+    }
+    .marketing .btn {
+        color: #48CE36;
+        border: 1px solid #48CE36;
+    }
+    .marketing .btn:hover {
+        color: rgb(209, 28, 115);
+        border: 1px solid rgb(209, 28, 115);
+    }
+
+
+
+    
+    .kontakty h2 {
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .kontakty h2 .green {
+        font-weight: 400;
+        letter-spacing: 5px;
+    }
+    
+        
+    .kontakty p {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+    }
+    
