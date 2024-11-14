@@ -22,10 +22,13 @@
     }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Host Grotesk", sans-serif;
 }
 
 .bg-black {
@@ -82,21 +85,42 @@
     min-height: 800px;
 }
 
-.bg-deska, .panel2, .minule, .bg, .bg-bio, .bg_nav-panel1, .galerie {
+.bg-deska,
+.panel2,
+.minule,
+.bg,
+.bg-bio,
+.bg_nav-panel1,
+.galerie, .carouser-iner {
     max-width: 1500px;
     margin: auto;
+}
+@media (min-width: 576px)
+/*tablet*/
+    {
+        .bg-deska,
+.panel2,
+.minule,
+.bg,
+.bg-bio,
+.bg_nav-panel1,
+.galerie {
     padding-left: 3rem;
     padding-right: 3rem;
 }
-nav .container-fluid{
+}
+
+nav .container-fluid {
     max-width: 1500px;
     margin: auto;
 }
+
 .panel1 p,
 .button,
 .panel2 p {
     font-size: 13px;
 }
+
 
 .panel1 h1 img {
     width: 250px;
@@ -305,8 +329,15 @@ nav .container-fluid{
 .pulka-text .button {
     background-color: unset;
     border: 1px solid #48CE36;
-    display: inline-block;
-    margin-left: auto;
+    position: absolute;
+    left: 11rem;
+}
+@media (min-width: 768px)
+/*tablet*/
+    {
+        .pulka-text .button {
+            left: 20rem;
+        }
 }
 
 .pulka-text .button a {
@@ -333,7 +364,6 @@ nav .container-fluid{
 
 
 .bg-koncert nav {
-    background-color: black;
     padding-bottom: 3rem;
 }
 
@@ -428,14 +458,15 @@ p .zelena {
     padding-right: 2rem;
     padding-top: 2rem;
 }
+
 @media (min-width: 768px)
 /*tablet*/
     {
-        .obsah2 {
-            padding-left: 9rem;
-            padding-right: 9rem;
-            padding-top: 2rem;
-        }
+    .obsah2 {
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-top: 2rem;
+    }
 }
 
 .accordion {
@@ -481,6 +512,7 @@ p .zelena {
 .projekty {
     padding-top: 8rem;
 }
+
 .projekty .card a {
     background-color: #48CE36;
     border-radius: 20px;
@@ -498,103 +530,166 @@ p .zelena {
 
 
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    .bg-bio {
-        background-color: #000 !important;
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
     }
-    
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
+.bg-bio {
+    background-color: #000 !important;
+}
+
+.featurette img {
+    max-width: 300px;
+    height: auto;
+}
+
+@media (min-width: 768px) {
     .featurette img {
-        max-width: 300px;
-        height: auto;
+        width: 100%;
     }
-    @media (min-width: 768px) {
-        .featurette img {
-            width: 100%;
-        }
-      }
+}
 
-      @media (min-width: 992px) {
-        .col-lg-6 {
-            width: 75% !important;
-        }
+@media (min-width: 992px) {
+    .col-lg-6 {
+        width: 75% !important;
     }
-    body .bg-body-secondary {
-        background-color: rgb(72,206,54, 0.7) !important;
-    }
+}
 
-    .featurette h2 {
-        color: rgb(209, 28, 115) !important;
-    }
-    .bg-bio p {
-        line-height: 1.8rem;
-    }
-    .marketing .btn {
-        color: #48CE36;
-        border: 1px solid #48CE36;
-    }
-    .marketing .btn:hover {
-        color: rgb(209, 28, 115);
-        border: 1px solid rgb(209, 28, 115);
-    }
+body .bg-body-secondary {
+    background-color: rgb(72, 206, 54, 0.7) !important;
+}
 
+.featurette h2 {
+    color: rgb(209, 28, 115) !important;
+}
+
+.bg-bio p {
+    line-height: 1.8rem;
+}
+
+.marketing .btn {
+    color: #48CE36;
+    border: 1px solid #48CE36;
+}
+
+.marketing .btn:hover {
+    color: rgb(209, 28, 115);
+    border: 1px solid rgb(209, 28, 115);
+}
 
 
-    
-    .kontakty h2 {
-        font-size: 40px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+
+
+.kontakty h2 {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    opacity: 80%;
+}
+
+.kontakty h2 .zelena {
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #48CE36;
+    opacity: 80%;
+}
+
+
+.kontakty p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    opacity: 70%;
+}
+
+.footer {
+    background-color: #1b9e0f;
+}
+
+.form-control {
+    background-color: unset !important;
+    border: 1px solid #48CE36 !important;
+}
+
+.form {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.send {
+    padding-top: 3rem;
+}
+@media (min-width: 992px) {
+    .form {
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
-    
-    .kontakty h2 .green {
-        font-weight: 400;
-        letter-spacing: 5px;
+}
+.send .btn {
+    background-color: #1b9e0f;
+    color: #000;
+    border: none;
+}
+.send .form-floating {
+    color: #fff;
+    opacity: 60%;
+}
+
+.fancybox-protected {
+    background-image: url("https://fancyapps.com/img/watermark.png");
+    background-size: cover;
+}
+.row {
+    margin: auto;
+}
+.fotky2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+@media (min-width: 768px) {
+    .fotky2 {
+        width: 100%;
     }
-    
-        
-    .kontakty p {
-        font-size: 15px;
-        font-weight: 500;
-        text-align: center;
-    }
-    
+}
